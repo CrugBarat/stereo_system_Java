@@ -38,4 +38,11 @@ public class Stereo {
         return recordDeck.play();
     }
 
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
 }

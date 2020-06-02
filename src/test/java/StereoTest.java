@@ -46,4 +46,16 @@ public class StereoTest {
     public void canPlayRecordDeck() {
         assertEquals("Now playing at: 6 play speed", stereo.playRecord());
     }
+
+    @Test
+    public void volumeStartsAtZero() {
+        assertEquals(0, stereo.getVolume());
+    }
+
+    @Test
+    public void canSetVolume() {
+        stereo.setVolume(10);
+        assertEquals(10, stereo.getVolume());
+    }
+
 }
