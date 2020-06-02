@@ -10,12 +10,22 @@ public class RadioTest {
 
     @Before
     public void before() {
-        radio = new Radio(102.5);
+        radio = new Radio("Sony","RD10928", 102.5);
     }
 
     @Test
     public void canGetFrequency() {
         assertEquals(102.5, radio.getFrequency(), 0.01);
+    }
+
+    @Test
+    public void canGetMake() {
+        assertEquals("Sony", radio.getMake());
+    }
+
+    @Test
+    public void canGetModel() {
+        assertEquals("RD10928", radio.getModel());
     }
 
     @Test

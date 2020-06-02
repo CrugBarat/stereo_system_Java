@@ -1,10 +1,11 @@
 package components;
 
-public class Radio implements IPlay {
+public class Radio extends Component implements IPlay {
 
     double frequency;
 
-    public Radio(double frequency) {
+    public Radio(String make, String model,double frequency) {
+        super(make, model);
         this.frequency = frequency;
     }
 
