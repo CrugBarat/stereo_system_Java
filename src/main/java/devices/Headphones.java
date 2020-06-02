@@ -1,23 +1,9 @@
 package devices;
 
-public class Headphones implements IConnect {
-    private String make;
-    private String model;
+public class Headphones extends Device {
 
     public Headphones(String make, String model) {
-        this.make = make;
-        this.model = model;
+        super(make, model);
     }
 
-    public String getMake() {
-        return this.make;
-    }
-
-    public String getModel() {
-        return this.model;
-    }
-
-    public String connect(Stereo stereo) {
-        return "Connected to: " + stereo.getName();
-    }
 }
