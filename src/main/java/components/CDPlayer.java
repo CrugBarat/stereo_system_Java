@@ -1,10 +1,11 @@
 package components;
 
-public class CDPlayer implements IPlay {
+public class CDPlayer extends Component implements IPlay {
 
     int numberOfCDs;
 
-    public CDPlayer(int numberOfCDs) {
+    public CDPlayer(String make, String model, int numberOfCDs) {
+        super(make, model);
         this.numberOfCDs = numberOfCDs;
     }
 

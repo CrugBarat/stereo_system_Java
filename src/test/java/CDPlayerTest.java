@@ -10,12 +10,22 @@ public class CDPlayerTest {
 
     @Before
     public void before() {
-        cdPlayer = new CDPlayer(4);
+        cdPlayer = new CDPlayer("Sony", "XD12345", 4);
     }
 
     @Test
     public void canGetNumberOfCDsy() {
         assertEquals(4, cdPlayer.getNumberOfCDs());
+    }
+
+    @Test
+    public void canGetMake() {
+        assertEquals("Sony", cdPlayer.getMake());
+    }
+
+    @Test
+    public void canGetModel() {
+        assertEquals("XD12345", cdPlayer.getModel());
     }
 
     @Test
