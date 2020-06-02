@@ -1,4 +1,4 @@
-public class RecordDeck {
+public class RecordDeck implements IPlay {
 
     int playSpeed;
 
@@ -12,5 +12,9 @@ public class RecordDeck {
 
     public void setPlaySpeed(int playSpeed) {
         this.playSpeed = playSpeed;
+    }
+
+    public void play() {
+
     }
 }

@@ -1,4 +1,4 @@
-public class CDPlayer {
+public class CDPlayer implements IPlay{
 
     int numberOfCDs;
 
@@ -12,5 +12,9 @@ public class CDPlayer {
 
     public void setNumberOfCDs(int numberOfCDs) {
         this.numberOfCDs = numberOfCDs;
+    }
+
+    public void play() {
+
     }
 }

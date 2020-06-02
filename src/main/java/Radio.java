@@ -1,4 +1,4 @@
-public class Radio {
+public class Radio implements IPlay {
 
     double frequency;
 
@@ -18,4 +18,7 @@ public class Radio {
         return station;
     }
 
+    public void play() {
+
+    }
 }
