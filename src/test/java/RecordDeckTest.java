@@ -22,4 +22,9 @@ public class RecordDeckTest {
         recordDeck.setPlaySpeed(12);
         assertEquals(12, recordDeck.getPlaySpeed());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Now playing at: 6 play speed", recordDeck.play());
+    }
 }

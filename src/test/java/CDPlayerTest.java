@@ -22,5 +22,10 @@ public class CDPlayerTest {
         cdPlayer.setNumberOfCDs(2);
         assertEquals(2, cdPlayer.getNumberOfCDs());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Now playing one of: 4 CDs", cdPlayer.play());
+    }
 }
 

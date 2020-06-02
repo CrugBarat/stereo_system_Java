@@ -14,7 +14,7 @@ public class RecordDeck implements IPlay {
         this.playSpeed = playSpeed;
     }
 
-    public void play() {
-
+    public String play() {
+        return "Now playing at: " + this.playSpeed + " play speed";
     }
 }

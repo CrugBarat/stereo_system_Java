@@ -14,7 +14,7 @@ public class CDPlayer implements IPlay{
         this.numberOfCDs = numberOfCDs;
     }
 
-    public void play() {
-
+    public String play() {
+        return "Now playing one of: " + this.numberOfCDs + " CDs";
     }
 }

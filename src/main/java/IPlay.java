@@ -1,4 +1,4 @@
 public interface IPlay {
 
-    void play();
+    String play();
 }

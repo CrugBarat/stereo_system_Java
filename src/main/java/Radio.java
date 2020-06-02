@@ -18,7 +18,7 @@ public class Radio implements IPlay {
         return station;
     }
 
-    public void play() {
-
+    public String play() {
+        return "Now playing on: " + this.frequency + " frequency";
     }
 }
