@@ -10,12 +10,22 @@ public class RecordDeckTest {
 
     @Before
     public void before() {
-        recordDeck = new RecordDeck(6);
+        recordDeck = new RecordDeck("Sony","RP98278", 6);
     }
 
     @Test
     public void canGetPlaySpeed() {
         assertEquals(6, recordDeck.getPlaySpeed());
+    }
+
+    @Test
+    public void canGetMake() {
+        assertEquals("Sony", recordDeck.getMake());
+    }
+
+    @Test
+    public void canGetModel() {
+        assertEquals("RP98278", recordDeck.getModel());
     }
 
     @Test
