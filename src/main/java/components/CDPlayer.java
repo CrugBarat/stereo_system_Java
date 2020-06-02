@@ -1,4 +1,6 @@
-public class CDPlayer implements IPlay{
+package components;
+
+public class CDPlayer implements IPlay {
 
     int numberOfCDs;
 

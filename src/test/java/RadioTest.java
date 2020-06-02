@@ -1,3 +1,4 @@
+import components.Radio;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -25,7 +26,7 @@ public class RadioTest {
 
     @Test
     public void canTune() {
-        assertEquals("Radio 1", radio.tune("Radio 1"));
+        assertEquals("components.Radio 1", radio.tune("components.Radio 1"));
     }
 
     @Test

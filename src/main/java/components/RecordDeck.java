@@ -1,3 +1,5 @@
+package components;
+
 public class RecordDeck implements IPlay {
 
     int playSpeed;
