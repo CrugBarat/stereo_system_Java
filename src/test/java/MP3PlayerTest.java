@@ -18,7 +18,7 @@ public class MP3PlayerTest {
 
     @Before
     public void before() {
-        mp3Player = new MP3Player("iPod", "Mini");
+        mp3Player = new MP3Player("Apple", "IPod");
         radio = new Radio("Sony","RD10928", 102.5);
         cdPlayer = new CDPlayer("Sony", "XD12345", 4);
         recordDeck = new RecordDeck("Sony","RP98278", 6);
@@ -27,12 +27,12 @@ public class MP3PlayerTest {
 
     @Test
     public void canGetMake() {
-        assertEquals("iPod", mp3Player.getMake());
+        assertEquals("Apple", mp3Player.getMake());
     }
 
     @Test
     public void canGetModel() {
-        assertEquals("Mini", mp3Player.getModel());
+        assertEquals("IPod", mp3Player.getModel());
     }
 
     @Test
