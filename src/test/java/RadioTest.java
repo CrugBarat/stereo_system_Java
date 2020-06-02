@@ -9,7 +9,18 @@ public class RadioTest {
 
     @Before
     public void before() {
-        radio = new Radio();
+        radio = new Radio(102.5);
+    }
+
+    @Test
+    public void canGetFrequency() {
+        assertEquals(102.5, radio.getFrequency(), 0.01);
+    }
+
+    @Test
+    public void canSetFrequency() {
+        radio.setFrequency(106.1);
+        assertEquals(106.1, radio.getFrequency(), 0.01);
     }
 
     @Test
