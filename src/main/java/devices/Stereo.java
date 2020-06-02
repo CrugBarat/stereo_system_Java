@@ -1,3 +1,5 @@
+package devices;
+
 import components.CDPlayer;
 import components.Radio;
 import components.RecordDeck;

@@ -1,4 +1,6 @@
-public class MP3Player implements IConnect{
+package devices;
+
+public class MP3Player implements IConnect {
 
     private String make;
     private String model;

@@ -1,6 +1,8 @@
 import components.CDPlayer;
 import components.Radio;
 import components.RecordDeck;
+import devices.MP3Player;
+import devices.Stereo;
 import org.junit.Before;
 import org.junit.Test;
 
