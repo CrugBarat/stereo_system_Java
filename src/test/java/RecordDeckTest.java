@@ -14,7 +14,7 @@ public class RecordDeckTest {
 
     @Test
     public void canGetPlaySpeed() {
-        assertEquals(6, recordDeck.getPlaySpeed(), 0.01);
+        assertEquals(6, recordDeck.getPlaySpeed());
     }
 
     @Test
