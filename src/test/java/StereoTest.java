@@ -26,4 +26,24 @@ public class StereoTest {
     public void canGetName() {
         assertEquals("Sony SoundSystem", stereo.getName());
     }
+
+    @Test
+    public void canTuneRadio() {
+        assertEquals("Station playing: Radio 1", stereo.tuneRadio("Radio 1"));
+    }
+
+    @Test
+    public void canPlayRadio() {
+        assertEquals("Now playing on: 102.5 frequency", stereo.playRadio());
+    }
+
+    @Test
+    public void canPlayCDPlayer() {
+        assertEquals("Now playing one of: 4 CDs", stereo.playCD());
+    }
+
+    @Test
+    public void canPlayRecordDeck() {
+        assertEquals("Now playing at: 6 play speed", stereo.playRecord());
+    }
 }

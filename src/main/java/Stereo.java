@@ -22,4 +22,20 @@ public class Stereo {
         return this.name;
     }
 
+    public String tuneRadio(String station) {
+        return "Station playing: " +  radio.tune(station);
+    }
+
+    public String playRadio() {
+        return radio.play();
+    }
+
+    public String playCD() {
+        return cdPlayer.play();
+    }
+
+    public String playRecord() {
+        return recordDeck.play();
+    }
+
 }
