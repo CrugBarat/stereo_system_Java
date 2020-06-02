@@ -2,7 +2,7 @@ package components;
 
 public class Radio extends Component implements IPlay {
 
-    double frequency;
+    private double frequency;
 
     public Radio(String make, String model,double frequency) {
         super(make, model);

@@ -2,7 +2,7 @@ package components;
 
 public class RecordDeck extends Component implements IPlay {
 
-    int playSpeed;
+    private int playSpeed;
 
     public RecordDeck(String make, String model, int playSpeed) {
         super(make, model);
